@@ -2,7 +2,6 @@
     padding: 39px 29px 29px 29px;
     display: flex;
     flex-direction: column;
-    line-height: 1.25;
 
     counter-increment: unique-count;
 
@@ -38,6 +37,8 @@
         font-weight: 700;
         text-transform: uppercase;
 
+        font-size: 20px;
+
         @media (max-width: 1024px) {
             font-size: 16px;
         }
@@ -67,6 +68,102 @@
 
         @media (max-width: 1024px) {
             font-size: 14px;
+        }
+    }
+}
+
+._single-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 40px 40px 40px;
+    }
+
+    .icon {
+        flex: 0 0 auto;
+        width: 259px;
+        height: 259px;
+        z-index: 1;
+        position: relative;
+
+        img,
+        picture,
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        z-index: 1;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+
+        text-transform: uppercase;
+
+        width: 100%;
+        max-width: 610px;
+    }
+}
+
+.for-item {
+    overflow: hidden;
+    position: relative;
+    padding: 25px 30px 0 30px;
+    min-height: 206px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+        padding: 23px 20px 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        height: 300px;
+    }
+
+    &._border-black {
+        color: #e7e7e7;
+    }
+
+    div {
+        flex: 1 1 auto;
+        height: calc(100% - 10px);
+        max-height: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img,
+        picture {
+            max-height: 100%;
+            object-fit: contain;
+            object-position: bottom;
+        }
+    }
+
+    p {
+        @include adaptive-value("font-size", 18, 14, 1);
+
+        @media (max-width: 768px) {
+            max-width: 75%;
         }
     }
 }

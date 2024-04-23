@@ -160,7 +160,6 @@
 
             p {
                 color: #e7e7e7;
-                line-height: 1.25;
 
                 @include adaptive-value("font-size", 20, 14, 1);
             }

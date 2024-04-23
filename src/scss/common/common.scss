@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     color: $black;
     background-color: #f6f6f6;
+    line-height: 1.25;
 
     &._noscroll {
         overflow: hidden;
@@ -40,7 +41,7 @@ main {
     }
 
     @media (max-width: 1024px) {
-        padding-inline: 10px;
+        padding-inline: 15px;
     }
 }
 
@@ -62,6 +63,7 @@ h6 {
 }
 
 h1 {
+    line-height: 1;
 }
 
 h2 {
@@ -288,6 +290,7 @@ section {
     background-color: $white;
     border-radius: 5px;
     position: relative;
+    overflow: hidden;
 
     &:before {
         position: absolute;
@@ -296,5 +299,15 @@ section {
         border-radius: 5px;
         border: 1px solid #ebebeb;
         pointer-events: none;
+    }
+
+    // ._border-black
+
+    &-black {
+        background-color: $black;
+
+        &:before {
+            border: 1px solid #676767;
+        }
     }
 }

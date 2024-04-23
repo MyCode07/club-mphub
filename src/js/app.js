@@ -6,7 +6,7 @@
 // import "./parts/forms.js";
 // import "./parts/tabs.js";
 // import "./parts/popup.js";
-// import "./parts/menu.js";
+ import "./parts/menu.js";
 // import "./parts/sliders.js";
 // import "./parts/offers.js";
 // import { stickyHeader } from "./parts/header.js";
